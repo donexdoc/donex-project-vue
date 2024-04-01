@@ -3,9 +3,12 @@
     <v-app-bar flat>
       <v-container class="mx-auto d-flex align-center justify-center">
         <v-app-bar-nav-icon class="d-sm d-md-none" @click="openDrawer"></v-app-bar-nav-icon>
-        <v-avatar class="me-4" size="32">
+        <v-avatar class="me-2" size="32">
           <v-img alt="DonEx" :src="logoImage"></v-img>
         </v-avatar>
+        <div class="text-h6 me-2">
+          <span class="text-red-accent-4">D</span>on<span class="text-indigo-darken-1">E</span>x
+        </div>
 
         <div class="d-none d-md-flex">
           <v-btn
