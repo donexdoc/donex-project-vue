@@ -2,16 +2,20 @@
   <nav>
     <v-app-bar flat>
       <v-container class="mx-auto d-flex align-center justify-center">
+        <v-app-bar-nav-icon class="d-sm d-md-none" @click="openDrawer"></v-app-bar-nav-icon>
         <v-avatar class="me-4" size="32">
           <v-img alt="DonEx" :src="logoImage"></v-img>
         </v-avatar>
-        <v-btn
-          v-for="link in links"
-          :key="link.title"
-          :text="link.title"
-          variant="text"
-          @click="navigateTo(link.path)"
-        ></v-btn>
+
+        <div class="d-none d-md-flex">
+          <v-btn
+            v-for="link in links"
+            :key="link.title"
+            :text="link.title"
+            variant="text"
+            @click="navigateTo(link.path)"
+          ></v-btn>
+        </div>
 
         <v-spacer></v-spacer>
 
@@ -40,5 +44,11 @@ const navigateTo = (to: string) => {
     props.setDrawerState(false)
   }
   navigate(to)
+}
+
+const openDrawer = () => {
+  if (props.setDrawerState) {
+    props.setDrawerState(true)
+  }
 }
 </script>
