@@ -16,9 +16,9 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import AppBar from '@/components/navigation/AppBar.vue'
-import useDrawer from './composables/drawer.js'
-import AppDrawer from './components/navigation/AppDrawer.vue'
+import AppBar from '@/components/Navigation/AppBar.vue'
+import useDrawer from '@/composables/drawer.js'
+import AppDrawer from '@/components/Navigation/AppDrawer.vue'
 
 const { drawerState, setDrawerState, toggleDrawer } = useDrawer()
 </script>
