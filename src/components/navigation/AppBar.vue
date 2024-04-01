@@ -10,14 +10,14 @@
           :key="link.title"
           :text="link.title"
           variant="text"
-          @click="navigate(link.path)"
+          @click="navigateTo(link.path)"
         ></v-btn>
 
         <v-spacer></v-spacer>
 
         <v-responsive max-width="160">
           <v-container class="d-flex flex-row-reverse">
-            <v-btn variant="text" @click="navigate('/#ytBlog')" icon="mdi-youtube"></v-btn>
+            <v-btn variant="text" @click="navigateTo('/#ytBlog')" icon="mdi-youtube"></v-btn>
           </v-container>
         </v-responsive>
       </v-container>
@@ -29,5 +29,16 @@
 import logoImage from '@/assets/sticker.png'
 import useNavigation from '@/composables/navigation.js'
 
+const props = defineProps<{
+  setDrawerState?: (state: boolean) => void
+}>()
+
 const { links, navigate } = useNavigation()
+
+const navigateTo = (to: string) => {
+  if (props.setDrawerState) {
+    props.setDrawerState(false)
+  }
+  navigate(to)
+}
 </script>

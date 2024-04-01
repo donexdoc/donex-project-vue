@@ -3,6 +3,7 @@ import { useRouter } from 'vue-router'
 interface INavigationItem {
   title: string
   path: string
+  icon?: string
 }
 
 export default function useNavigation() {
@@ -10,18 +11,22 @@ export default function useNavigation() {
     {
       title: 'Обо мне',
       path: '/#aboutMe',
+      icon: 'mdi-account-tie',
     },
     {
       title: 'Скиллы',
       path: '/#summarySkills',
+      icon: 'mdi-flash',
     },
     {
       title: 'Опыт работы',
       path: '/#workEsperience',
+      icon: 'mdi-domain',
     },
     {
       title: 'Интересные проекты',
       path: '/#projectList',
+      icon: 'mdi-bullseye-arrow',
     },
   ]
 
