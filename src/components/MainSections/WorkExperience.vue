@@ -10,7 +10,7 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
     <v-container>
       <h1 class="text-h4 mb-5">Опыт работы</h1>
       <p>
-        За свою карьеру я поработал в разных командах, в компаниях разных размеров. От небольших
+        За свою карьеру я работал в разных командах, в компаниях разных размеров. От небольших
         компаний в сфере телевидения до гигантов авиации.
       </p>
 
@@ -40,8 +40,62 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
                   subtitle="Система оповещения нарушений в температуре и влажности склада"
                 ></v-list-item>
               </v-list>
-              JavaScript, TypeScript, Node JS, Vue, Vuetify, Vuex, React, Redux, MUI, Next JS, Nest
-              JS
+              <v-chip
+                class="ma-1"
+                color="amber-darken-4"
+                prepend-icon="mdi-language-javascript"
+                size="small"
+                variant="elevated"
+                >JavaScript</v-chip
+              >
+              <v-chip
+                class="ma-1"
+                color="blue-darken-3"
+                prepend-icon="mdi-language-typescript"
+                size="small"
+                variant="elevated"
+                >TypeScript</v-chip
+              >
+              <v-chip
+                class="ma-1"
+                color="green"
+                prepend-icon="mdi-nodejs"
+                size="small"
+                variant="elevated"
+                >Node JS</v-chip
+              >
+              <v-chip
+                class="ma-1"
+                color="green-darken-3"
+                prepend-icon="mdi-vuejs"
+                size="small"
+                variant="elevated"
+                >Vue + Vuex + Vuetify</v-chip
+              >
+              <v-chip
+                class="ma-1"
+                color="blue"
+                prepend-icon="mdi-react"
+                size="small"
+                variant="elevated"
+                >React + Redux + MUI</v-chip
+              >
+              <v-chip
+                class="ma-1"
+                color="pink"
+                prepend-icon="mdi-code-braces"
+                size="small"
+                variant="elevated"
+                >Nest JS</v-chip
+              >
+              <v-chip
+                class="ma-1"
+                color="blue"
+                prepend-icon="mdi-code-braces"
+                size="small"
+                variant="elevated"
+                >Next JS</v-chip
+              >
             </template>
           </CompanyCard>
         </v-col>
@@ -68,7 +122,59 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
                 ></v-list-item>
               </v-list>
 
-              Java, Python, Django, JavaScript, Bootstrap, JQuery
+              <v-chip
+                class="ma-1"
+                color="red"
+                prepend-icon="mdi-language-java"
+                size="small"
+                variant="elevated"
+                >Java</v-chip
+              >
+
+              <v-chip
+                class="ma-1"
+                color="blue-darken-3"
+                prepend-icon="mdi-language-python"
+                size="small"
+                variant="elevated"
+                >Python</v-chip
+              >
+
+              <v-chip
+                class="ma-1"
+                color="green-darken-3"
+                prepend-icon="mdi-code-braces"
+                size="small"
+                variant="elevated"
+                >Django</v-chip
+              >
+
+              <v-chip
+                class="ma-1"
+                color="amber-darken-4"
+                prepend-icon="mdi-language-javascript"
+                size="small"
+                variant="elevated"
+                >JavaScript</v-chip
+              >
+
+              <v-chip
+                class="ma-1"
+                color="pink"
+                prepend-icon="mdi-bootstrap"
+                size="small"
+                variant="elevated"
+                >Bootstrap</v-chip
+              >
+
+              <v-chip
+                class="ma-1"
+                color="amber-darken-4"
+                prepend-icon="mdi-jquery"
+                size="small"
+                variant="elevated"
+                >JQuery</v-chip
+              >
             </template>
           </CompanyCard>
         </v-col>
@@ -96,7 +202,23 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
                 ></v-list-item>
               </v-list>
 
-              Java, Objective-c
+              <v-chip
+                class="ma-1"
+                color="red"
+                prepend-icon="mdi-language-java"
+                size="small"
+                variant="elevated"
+                >Java</v-chip
+              >
+
+              <v-chip
+                class="ma-1"
+                color="amber-darken-5"
+                prepend-icon="mdi-code-brackets"
+                size="small"
+                variant="elevated"
+                >Objective-c</v-chip
+              >
             </template>
           </CompanyCard>
         </v-col>
