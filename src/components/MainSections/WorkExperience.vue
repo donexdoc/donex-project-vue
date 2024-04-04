@@ -15,7 +15,7 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
       </p>
 
       <v-row class="my-3">
-        <v-col xs="12" sm="12" md="4">
+        <v-col cols="12" xs="12" sm="12" md="4">
           <CompanyCard title="Аеroflot">
             <template v-slot:avatar>
               <v-img alt="Aeroflot" :src="AeroflotLogo"></v-img>
@@ -25,21 +25,13 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
               <div>
                 Сложные самостоятельные проекты в сфере технического обслуживания воздушных судов.
               </div>
-
-              <v-list lines="two">
-                <v-list-item
-                  title="Чек-лист ОТК"
-                  subtitle="Контроль качества технического обслуживания"
-                ></v-list-item>
-                <v-list-item
-                  title="СКУД администратор"
-                  subtitle="Контроль времени работы сотрудников"
-                ></v-list-item>
-                <v-list-item
-                  title="Умный склад"
-                  subtitle="Система оповещения нарушений в температуре и влажности склада"
-                ></v-list-item>
+              <v-list lines="one">
+                <v-list-item title="Чек-лист ОТК"></v-list-item>
+                <v-list-item title="СКУД администратор"></v-list-item>
+                <v-list-item title="Умный склад"></v-list-item>
               </v-list>
+            </template>
+            <template v-slot:techs>
               <v-chip
                 class="ma-1"
                 color="amber-darken-4"
@@ -100,7 +92,7 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
           </CompanyCard>
         </v-col>
 
-        <v-col xs="12" sm="12" md="4">
+        <v-col cols="12" xs="12" sm="12" md="4">
           <CompanyCard title="Beeline">
             <template v-slot:avatar>
               <v-img alt="Beeline" :src="BeelineLogo"></v-img>
@@ -111,17 +103,12 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
                 Разработка новых и доработка существующих проектов в компании в виде web-сервисов.
               </div>
 
-              <v-list lines="two">
-                <v-list-item
-                  title="Корпоративный портал"
-                  subtitle="Портал оценки работы коллег"
-                ></v-list-item>
-                <v-list-item
-                  title="Парсер выгрузки PCRF"
-                  subtitle="Выгрузка и фильтрация данных пользователей"
-                ></v-list-item>
+              <v-list lines="one">
+                <v-list-item title="Корпоративный портал"></v-list-item>
+                <v-list-item title="Парсер выгрузки PCRF"></v-list-item>
               </v-list>
-
+            </template>
+            <template v-slot:techs>
               <v-chip
                 class="ma-1"
                 color="red"
@@ -179,7 +166,7 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
           </CompanyCard>
         </v-col>
 
-        <v-col xs="12" sm="12" md="4">
+        <v-col cols="12" xs="12" sm="12" md="4">
           <CompanyCard title="Telebreeze">
             <template v-slot:avatar>
               <v-img alt="Telebreeze" :src="TelebreezeLogo"></v-img>
@@ -191,17 +178,12 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
                 Android, IOS, ТВ-приставки.
               </div>
 
-              <v-list lines="two">
-                <v-list-item
-                  title="Приложение Android"
-                  subtitle="Приложение интернет-телевидения для сматрфонов и приставок."
-                ></v-list-item>
-                <v-list-item
-                  title="Приложение IOS"
-                  subtitle="Приложение интернет-телевидения для IOS"
-                ></v-list-item>
+              <v-list lines="one">
+                <v-list-item title="Приложение Android"></v-list-item>
+                <v-list-item title="Приложение IOS"></v-list-item>
               </v-list>
-
+            </template>
+            <template v-slot:techs>
               <v-chip
                 class="ma-1"
                 color="red"

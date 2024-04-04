@@ -13,6 +13,9 @@
 
     <v-card-text>
       <slot name="description"></slot>
+      <div class="text-center">
+        <slot name="techs"></slot>
+      </div>
     </v-card-text>
   </v-card>
 </template>
