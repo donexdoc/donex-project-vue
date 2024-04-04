@@ -4,6 +4,7 @@ import SummarySkills from '@/components/MainSections/SummarySkills.vue'
 import WorkExperience from '@/components/MainSections/WorkExperience.vue'
 import YTBlog from '@/components/MainSections/YTBlog.vue'
 import AboutMe from '@/components/MainSections/AboutMe.vue'
+import ContactLinks from '@/components/MainSections/ContactLinks.vue'
 </script>
 
 <template>
@@ -12,4 +13,5 @@ import AboutMe from '@/components/MainSections/AboutMe.vue'
   <WorkExperience />
   <ProjectList />
   <YTBlog />
+  <ContactLinks />
 </template>

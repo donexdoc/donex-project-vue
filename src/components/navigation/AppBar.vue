@@ -24,7 +24,18 @@
 
         <v-responsive max-width="160">
           <v-container class="d-flex flex-row-reverse">
-            <v-btn variant="text" @click="navigateTo('/#ytBlog')" icon="mdi-youtube"></v-btn>
+            <v-btn
+              color="red"
+              variant="text"
+              @click="navigateTo('/#ytBlog')"
+              icon="mdi-youtube"
+            ></v-btn>
+            <v-btn
+              color="blue"
+              variant="text"
+              @click="navigateTo('/#contacts')"
+              icon="mdi-at"
+            ></v-btn>
           </v-container>
         </v-responsive>
       </v-container>
