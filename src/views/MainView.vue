@@ -5,6 +5,7 @@ import WorkExperience from '@/components/MainSections/WorkExperience.vue'
 import YTBlog from '@/components/MainSections/YTBlog.vue'
 import AboutMe from '@/components/MainSections/AboutMe.vue'
 import ContactLinks from '@/components/MainSections/ContactLinks.vue'
+import ScrollFab from '@/components/Navigation/ScrollFab.vue'
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import ContactLinks from '@/components/MainSections/ContactLinks.vue'
   <ProjectList />
   <YTBlog />
   <ContactLinks />
+  <ScrollFab />
 </template>
