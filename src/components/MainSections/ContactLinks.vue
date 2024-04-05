@@ -57,7 +57,6 @@ const copyMail = () => {
     .writeText(EMAIL)
     .then(() => {
       showToast('Скопировано в буфер обмена')
-      throw Error('kek')
     })
     .catch(() => {
       showToast(`Ваш браузер не поддерживает копирование. ${EMAIL}`, SNACK_ERROR_TIMEOUT)
