@@ -4,14 +4,14 @@
       <h1 class="text-h4 mb-5">Контакты</h1>
       <p class="text-subtitle-1">
         По всем предложениям вы можете обращаться на почту:
-        <v-btn v-if="mailHide" color="blue" variant="text" @click="showMail">{{
+        <v-btn v-if="emailHide" color="blue" variant="text" @click="showMail">{{
           emailDisplay
         }}</v-btn>
         <v-btn v-else color="blue" variant="text" @click="copyMail"> {{ emailDisplay }}</v-btn>
       </p>
 
       <p class="text-subtitle-1">
-        Гитхаб (редко публикуюсь):
+        Github (редко публикуюсь):
 
         <v-btn color="blue" variant="text" href="https://github.com/donexdoc" target="__blank"
           >github.com/donexdoc</v-btn
@@ -20,7 +20,7 @@
     </v-container>
   </v-container>
 
-  <v-snackbar v-model="snackbar" :timeout="2000">
+  <v-snackbar v-model="snackbar" :timeout="snackTimeout">
     <p class="text-center">
       {{ snackMessage }}
     </p>
@@ -30,24 +30,44 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const SNACK_DEFAUT_TIMEOUT = 2000
+const SNACK_ERROR_TIMEOUT = 5000
+
 const snackbar = ref(false)
-const mailHide = ref(true)
+const emailHide = ref(true)
+const snackTimeout = ref(SNACK_DEFAUT_TIMEOUT)
 const snackMessage = ref('')
 const emailDisplay = ref('Показать')
 
 const EMAIL = 'donexcode@gmail.com'
 
+const showToast = (message: string, timeout?: number) => {
+  if (timeout !== undefined) {
+    snackTimeout.value = timeout
+  } else {
+    snackTimeout.value = SNACK_DEFAUT_TIMEOUT
+  }
+
+  snackMessage.value = message
+  snackbar.value = true
+}
+
 const copyMail = () => {
-  navigator.clipboard.writeText(EMAIL).then(() => {
-    snackMessage.value = 'Скопировано в буфер обмена'
-    snackbar.value = true
-  })
+  navigator.clipboard
+    .writeText(EMAIL)
+    .then(() => {
+      showToast('Скопировано в буфер обмена')
+      throw Error('kek')
+    })
+    .catch(() => {
+      showToast(`Ваш браузер не поддерживает копирование. ${EMAIL}`, SNACK_ERROR_TIMEOUT)
+    })
 }
 
 const showMail = () => {
-  snackMessage.value = 'Нажмите еще раз, чтобы скопировать'
   emailDisplay.value = EMAIL
-  mailHide.value = false
-  snackbar.value = true
+  emailHide.value = false
+
+  showToast('Нажмите еще раз, чтобы скопировать')
 }
 </script>
