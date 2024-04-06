@@ -4,9 +4,7 @@
   <v-container id="summarySkills" fluid class="pa-xs-5 pa-sm-10 pa-md-16">
     <v-container>
       <h1 class="text-h4 mb-5">Мои скиллы</h1>
-      <p class="text-subtitle-1">
-        В своей сфере, я использую профессиональные инструменты. Мои основные знания:
-      </p>
+      <p class="text-subtitle-1">В своей сфере я использую профессиональные инструменты:</p>
       <v-container class="text-center">
         <v-chip
           class="ma-1"

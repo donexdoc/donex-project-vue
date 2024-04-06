@@ -18,7 +18,7 @@ const router = createRouter({
   scrollBehavior(to) {
     return {
       el: to.hash,
-      top: 60,
+      top: 64,
       behavior: 'smooth',
     }
   },

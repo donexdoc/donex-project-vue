@@ -179,12 +179,12 @@ import TelebreezeLogo from '@/assets/telebreeze-logo.png'
             <template v-slot:description>
               <div>
                 Доработка клиентских приложений интернет-телевидения. Оптимизация приложений под
-                Android, IOS, ТВ-приставки.
+                Android, iOS, ТВ-приставки.
               </div>
 
               <v-list lines="one">
                 <v-list-item title="Приложение Android"></v-list-item>
-                <v-list-item title="Приложение IOS"></v-list-item>
+                <v-list-item title="Приложение iOS"></v-list-item>
               </v-list>
             </template>
             <template v-slot:techs>

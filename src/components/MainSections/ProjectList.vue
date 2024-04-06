@@ -22,6 +22,7 @@ import ProjectInfo from './Parts/ProjectInfo.vue'
             <v-btn
               variant="text"
               color="blue"
+              density="comfortable"
               href="https://atechnics.ru/news/4184/"
               target="__blank"
               >atechnics.ru</v-btn
@@ -44,12 +45,11 @@ import ProjectInfo from './Parts/ProjectInfo.vue'
         <ProjectInfo>
           <template v-slot:title> СКУД администратор </template>
           <template v-slot:description>
-            Web-приложение + бот Telegram, с мониторингом температуры и влажности на складе химии. В
-            случае нарушения условий хранения, рабочий персонал оповещается через Telegram бота. Для
-            web-приложения использовал TypeScript, Nest js, Postgres, Vue js, Vuetify js. Для
-            hardware-части использовал ESP8266 с датчиками влажности и температуры. Прошивку для
-            микроконтроллера писал на С++. Этот проект позволил в кратчайшие сроки сохранить запасы
-            технических жидкостей на складе.
+            Web-приложенийeb-приложение, отслеживающее общее время работы сотрудников, через
+            пропускную систему Perco. Приложение использует данные о сотрудниках из системы Perco,
+            сопоставляет с данными из 1C и делает анализ суммарного времени, проведенного каждым
+            сотрудником в офисе. Использовались TypeScript, Nest js, Postgres, Firebird (на стороне
+            Perco), React js, Redux, Material UI.
           </template>
         </ProjectInfo>
         <v-divider class="border-opacity-75" color="blue"></v-divider>
@@ -57,7 +57,7 @@ import ProjectInfo from './Parts/ProjectInfo.vue'
           <template v-slot:title> Расширение для Google Chrome </template>
           <template v-slot:description>
             Расширение с автоматизацией сборки информации по транспондерам. Приложение собирает все
-            данные по транспондерам в личном кабинете компании, и генерирует отчетные данные исходя
+            данные по транспондерам в личном кабинете компании и генерирует отчетные данные исходя
             из лимитов каждого сотрудника. JavaScript, HTML, CSS, Bootstrap.
           </template>
         </ProjectInfo>
