@@ -45,11 +45,11 @@ import ProjectInfo from './Parts/ProjectInfo.vue'
         <ProjectInfo>
           <template v-slot:title> СКУД администратор </template>
           <template v-slot:description>
-            Web-приложенийeb-приложение, отслеживающее общее время работы сотрудников, через
-            пропускную систему Perco. Приложение использует данные о сотрудниках из системы Perco,
-            сопоставляет с данными из 1C и делает анализ суммарного времени, проведенного каждым
-            сотрудником в офисе. Использовались TypeScript, Nest js, Postgres, Firebird (на стороне
-            Perco), React js, Redux, Material UI.
+            Web-приложенийe, отслеживающее общее время работы сотрудников через пропускную систему
+            Perco. Приложение использует данные о сотрудниках из системы Perco, сопоставляет с
+            данными из 1C и делает анализ суммарного времени, проведенного каждым сотрудником в
+            офисе. Использовались TypeScript, Nest js, Postgres, Firebird (на стороне Perco), React
+            js, Redux, Material UI.
           </template>
         </ProjectInfo>
         <v-divider class="border-opacity-75" color="blue"></v-divider>
