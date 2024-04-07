@@ -45,7 +45,7 @@ import ProjectInfo from './Parts/ProjectInfo.vue'
         <ProjectInfo>
           <template v-slot:title> СКУД администратор </template>
           <template v-slot:description>
-            Web-приложенийe, отслеживающее общее время работы сотрудников через пропускную систему
+            Web-приложениe, отслеживающее общее время работы сотрудников через пропускную систему
             Perco. Приложение использует данные о сотрудниках из системы Perco, сопоставляет с
             данными из 1C и делает анализ суммарного времени, проведенного каждым сотрудником в
             офисе. Использовались TypeScript, Nest js, Postgres, Firebird (на стороне Perco), React
